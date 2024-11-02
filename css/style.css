@@ -66,7 +66,7 @@ h4 {
   font-family: "Inter", sans-serif;
 }
 .top-content h1 {
-  font-size: 3.5rem;
+  font-size: 2.7rem;
   color: var(--secondary-color);
 }
 h1 span,
@@ -263,6 +263,10 @@ header.hide {
 /* ============ Hero-section End ============= */
 
 /* ============  Technology  Start ============= */
+.video-content iframe{
+  border: 1px solid var(--light-green);
+  border-radius: 15px;
+}
 .feature-section {
   background-color: var(--primary-color);
 }
@@ -544,6 +548,7 @@ header.hide {
   margin-bottom: 0;
 }
 .top-content p {
+  font-size: 14px;
   color: white;
   margin: 0 auto;
   width: 85%;
@@ -898,6 +903,10 @@ footer .copyright a {
   }
 }
 @media (max-width: 768px) {
+  .video-content iframe{
+    width: 600px;
+    height: 315px;
+  }
   .anime-card{
     width: 420px;
   }
@@ -956,6 +965,10 @@ footer .copyright a {
   }
 }
 @media (max-width: 576px) {
+  .video-content iframe{
+    width: 350px;
+    height: 215px;
+  }
   .anime-card {
     width: 355px;
   }
