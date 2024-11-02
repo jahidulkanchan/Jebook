@@ -23,35 +23,35 @@ document.addEventListener("click", (e) => {
 
 
 
-// Get Start
-document.getElementById('getStartBtn').addEventListener('click', function(e) {
-  e.preventDefault(); // Prevent the default anchor click behavior
-  window.scrollTo({
-      top: document.querySelector('#tech').offsetTop - 100, 
-      behavior: 'smooth' // Optional: adds smooth scrolling
-  });
-});
-// ========= Scroll to Top =========
-let calcScrollValue = () => {
-  let scrollProgress = document.getElementById("progress");
-  let pos = document.documentElement.scrollTop;
+// // Get Start
+// document.getElementById('getStartBtn').addEventListener('click', function(e) {
+//   e.preventDefault(); // Prevent the default anchor click behavior
+//   window.scrollTo({
+//       top: document.querySelector('#tech').offsetTop - 100, 
+//       behavior: 'smooth' // Optional: adds smooth scrolling
+//   });
+// });
+// // ========= Scroll to Top =========
+// let calcScrollValue = () => {
+//   let scrollProgress = document.getElementById("progress");
+//   let pos = document.documentElement.scrollTop;
 
-  let calcHeight =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 100) / calcHeight);
+//   let calcHeight =
+//     document.documentElement.scrollHeight -
+//     document.documentElement.clientHeight;
+//   let scrollValue = Math.round((pos * 100) / calcHeight);
 
-  pos > 200
-    ? (scrollProgress.style.display = "grid")
-    : (scrollProgress.style.display = "none");
-  scrollProgress.addEventListener("click", () => {
-    document.documentElement.scrollTop = 0;
-  });
-  scrollProgress.style.background = `conic-gradient(#b3ff00 ${scrollValue}%, #000000 ${scrollValue}%)`;
-};
+//   pos > 200
+//     ? (scrollProgress.style.display = "grid")
+//     : (scrollProgress.style.display = "none");
+//   scrollProgress.addEventListener("click", () => {
+//     document.documentElement.scrollTop = 0;
+//   });
+//   scrollProgress.style.background = `conic-gradient(#b3ff00 ${scrollValue}%, #000000 ${scrollValue}%)`;
+// };
 
-window.onscroll = calcScrollValue;
-window.onload = calcScrollValue;
+// window.onscroll = calcScrollValue;
+// window.onload = calcScrollValue;
 // Owl-carousel
 $(".owl-carousel").owlCarousel({
   loop: true,
